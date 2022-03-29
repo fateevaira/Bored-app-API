@@ -1,38 +1,48 @@
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .App {
-  text-align: center;
+    background-color: rgb(243, 127, 82, 0.4);
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    font-size: 42px;
+    color: rgb(88, 37, 3);
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+   color: rgb(49, 2, 2); 
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    background-color: bisque;
+    color: rgb(49, 2, 2);
+    border: rgb(49, 2, 2) solid 2px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+    background-color: rgb(230, 195, 167);
 }
